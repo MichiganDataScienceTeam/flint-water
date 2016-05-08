@@ -1,0 +1,40 @@
+#!/bin/sh
+#PBS -N MAKE_SUBMISSION
+#PBS -l procs=4,mem=8gb,walltime=00:10:00:00
+#PBS -j oe
+#PBS -V
+#PBS -l qos=preempt
+#PBS -A mdatascienceteam_flux
+#PBS -q flux
+
+
+
+
+#  Show list of CPUs you ran on, if you're running under PBS
+if [ -n "$PBS_NODEFILE" ]; then cat $PBS_NODEFILE; fi
+
+#  Change to the directory you submitted from
+if [ -n "$PBS_O_WORKDIR" ]; then cd $PBS_O_WORKDIR; fi
+
+module load epd
+module load lsa
+module load ffmpeg
+
+python main.py 3
+#python main.py 2 >new_predictors_score-4.txt
+
+
+#python main.py 3 >Gradient_Boosting_Regression_through_out.txt
+#python main.py 4 >Combined_Model_4.txt
+#python main.py 4 >Final_Model-8_CV.txt
+
+#python main.py 5 >./submissions/submission_16_output.txt
+
+#### -q fluxoe
+#### -l qos=flux
+#### -A physdoeproject_fluxoe
+
+#### -q flux
+#### -l qos=preempt
+#### -A mdatascienceteam_flux
+
