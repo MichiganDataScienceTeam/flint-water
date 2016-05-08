@@ -2,6 +2,8 @@
 This repository contains some of the preliminary work done by the Michigan Data Science Team related to the Flint Water Crisis.
 
 ### Data Used
+_Unfortunately, we cannot make all of the data we used public at this time._
+
 1. Residential testing data
     * Data collected from volunteered residential water tests.
 2. Parcel data
