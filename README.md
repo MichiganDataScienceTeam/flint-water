@@ -1,5 +1,6 @@
 # Flint - Water
-This repository contains some of the preliminary work done by the Michigan Data Science Team related to the Flint Water Crisis.
+This repository contains some of the preliminary work done by the Michigan Data Science Team related to the Flint Water Crisis. A majority of the work here was done on May 1st, 2016, and eventually led to the creation of the _Post Data Dive Summary_ notebook, found in `/Notebooks/`. 
+
 
 ### Data Used
 _Unfortunately, we cannot make all of the data we used public at this time._
